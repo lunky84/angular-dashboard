@@ -47,4 +47,13 @@
 .sidebar-heading {
   font-size: .75rem;
   text-transform: uppercase;
+  .collapse-icon{
+    transform: rotate(45deg);
+    transition: all 0.2s ease-in-out;
+  }
+  &.collapsed{
+    .collapse-icon{
+      transform: rotate(0deg);
+    }
+  }
 }

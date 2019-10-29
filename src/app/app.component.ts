@@ -1,14 +1,14 @@
 import { Component, AfterViewInit } from '@angular/core';
 import * as Feather from 'feather-icons';
 import { RouterModule } from '@angular/router';
-import { fadeAnimation } from './animations';
+import { slideFadeAnimation } from './animations';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   animations: [
-    fadeAnimation
+    slideFadeAnimation
   ],
   host: {
       class:'classYouWantApplied'
@@ -20,5 +20,5 @@ export class AppComponent implements AfterViewInit {
   ngAfterViewInit() {
     Feather.replace();
   }
-  
+
 }

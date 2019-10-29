@@ -3,11 +3,11 @@
 
 
 <div class="container-fluid">
-    <div class="row">
-      <app-sidebar></app-sidebar>
+  <div class="row">
+    <app-sidebar></app-sidebar>
 
-      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-        <router-outlet></router-outlet>
-      </main>
-    </div>
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4 content" [@fadeAnimation]="o.isActivated ? o.activatedRoute : ''">
+      <router-outlet #o="outlet"></router-outlet>
+    </main>
   </div>
+</div>

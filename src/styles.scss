@@ -17,3 +17,13 @@ body {
   [role="main"] {
     padding-top: 48px; /* Space for fixed navbar */
   }
+
+  main{
+    position: relative;
+  }
+
+  router-outlet ~ * {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
